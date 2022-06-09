@@ -1,0 +1,131 @@
+/* resetting the browser default styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.heading{
+    margin: 10px 0px;
+}
+
+/* search box*/
+.section-search{
+   background-color: #ff00ff;
+   padding: 10px;
+}
+
+#search{
+ width: 100%;
+ padding: 12px 20px;
+ border: none;
+ font-size: 20px;
+}
+
+/* user list section*/
+.user-list-section{
+    margin-top: 20px;
+}
+
+li{
+    border: 1px solid #eeeeee;
+    margin-top: -1px; /* prevents double border*/
+    background-color: #008080;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding: 12px;
+    color: #ffd700;
+}   
+
+li:hover{
+    background-color: #04f56538;
+}
+
+/* pill button for username*/
+.username{
+background-color: #ff00ff;
+color: #eeeeee;
+padding: 6px;
+font-size: 14px;
+font-weight: bold;
+border-radius: 5px;
+}
+
+
+/*media query for landscape*/
+/* land scape big desktop screen*/
+@media (min-width: 1200px) {
+ body{
+     width: 50%;
+ }
+
+ li{
+     font-size: 30px;
+     width: 100%;
+ }
+ .username{
+     font-size: 22px;
+ }
+}
+
+/*media query for landscape*/
+/* land scape maximum laptop*/
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    body{
+        width: 50%;
+    }
+   
+    li{
+        font-size: 23px;
+        width: 100%;
+    }
+    .username{
+        font-size: 15px;
+    }
+   }
+
+/* media query for landscape */
+/* land scape small laptop screen and tablet*/
+@media screen and (min-width: 500px) and (max-width: 799px) {
+    body{
+        width: 60%;
+    }
+
+    li{
+        font-size: 20px;
+        width: 100%
+    }
+    .username{
+        font-size: 13px;
+    }
+}
+
+/* media query for landscape */
+/* land scape small devices like smartphone*/
+@media screen and (max-width: 499px) {
+    body{
+        width: 100%;
+    }
+
+    li{
+        font-size: 18px;
+        width: 100%
+    }
+    .username{
+        font-size: 11px;
+    }
+}
+
+
